@@ -1,0 +1,17 @@
+.aside {
+    padding: 10px;
+    width: 150px;
+    height: 100%;
+    background: #282d32;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: fixed;
+    @media (max-width: 600px) {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+           
+  }
