@@ -55,7 +55,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-position: fixed;
+  position: fixed;
 }
 
 .feedback {
@@ -66,7 +66,7 @@ position: fixed;
   height: 600px;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url(/img/img/favicon/“.png);
+  background-image: url(/#src\img\favicon\“.png);
   background-position: center;
 }
 
@@ -511,18 +511,23 @@ nav::after {
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
+.post-preview__img{
+  border-radius: 5px;
+  overflow: hidden;
+  flex-basis: 565px;
+  flex-shrink: 0;
 
-@media screen and (max-width: 1237px) {
+}
+// Сostume setting
+@media screen and (max-width: 1599px) {
   .Services {
     flex-direction: column;
   }
 
   .Services > .item {
-    text-align: center;
     min-width: 363px;
     width: 100%;
-    border-radius: 6px;
-    background-color: #f6f6f6;
+    background-color: #f6f6f6 ;
     margin: 0 0;
     margin-top: 20px;
   }
@@ -531,36 +536,27 @@ nav::after {
     margin: 0;
     text-align: center;
   }
+  .post-preview__img {
+    flex-basis: auto;
+    max-width: 565px;
 }
-@media screen and (max-width:1392px){
-
-  .Services > .item {
-    text-align: center;
-    min-width: 363px;
-    width: 100%;
-    border-radius: 6px;
-    background-color: #f6f6f6;
-    margin: 0 0;
+// Сostume setting
+// First main-breakpoints 
+@media screen and (max-width:1599px){
+  .hero{
+   margin-left: 100px;
+   margin-top:100px;
   }
 }
-  /* Extra small devices (phones, 600px and down) */
-  @media screen and (max-width: 600px){
+
+
+@media screen and (max-width: 600px){
   .aside {
     width: 100%;
     height: auto;
     position: relative;
   }
-.logo{
-    position: relative;
-}
-.logo > .logo-title{
-    position: absolute;
-    margin:0;
-    padding:0;
-}
-.logo > p::after{
-    display:none;
-}
+
   .hero {
     margin: 0;
     background-color: #353a3f;
@@ -577,16 +573,12 @@ nav::after {
     font-weight: 400;
     font-size: 40px;
     text-align: center;
-    text-transform: uppercase;
     color: #ffffff;
-    font-family: "Poppins", sans-serif;
-  }
 
   .hero-sublit {
     max-height: 22px;
     height: 100%;
     color: #ffffff;
-    font-family: "Poppins", sans-serif;
     font-size: 25px;
     font-weight: 500;
     font-style: normal;
@@ -629,14 +621,10 @@ nav::after {
     width: 100%;
     min-height: 60px;
     height: 100%;
-    text-align: center;
     background-color: #4cb480;
-    border: 0;
     border-radius: 30px;
     color: #ffffff;
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
   }
 
   .hero-text {
@@ -644,12 +632,7 @@ nav::after {
     height: 131px;
     opacity: 0.5;
     color: #ffffff;
-    font-family: Poppins;
     font-size: 20px;
-    font-weight: 300;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 36px;
     text-align: center;
   }
 
@@ -657,26 +640,7 @@ nav::after {
     display: none;
   }
 
-.img-search{
-    display: none;}
-  .blog__heading {
-    text-transform: uppercase;
-    font-size: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 150px;
-}
-.blog{
-  padding:0;
-}
-.post-preview__img{
-    flex-basis: 525px;
-    flex-shrink: 0;
-}
-.post-preview {
-  display:block;
-  margin-bottom: 30px;
-}
+  .img-search {
+    display: none;
+  }
 }
