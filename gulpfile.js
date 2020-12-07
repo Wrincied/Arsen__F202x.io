@@ -14,7 +14,7 @@ gulp.task('scss' ,function(){
 });
 
 gulp.task('html',function(){
-    return gulp.src('src/*.html')
+    return gulp.src('*.html')
     .pipe(browserSync.reload({stream:true}))
 });
 
@@ -38,7 +38,7 @@ gulp.task('js',function(){
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "src/"
+            baseDir: "./"
         }
     });
 });
@@ -46,7 +46,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch' ,function(){
     gulp.watch('src/scss/**/*.scss',gulp.parallel('scss'))
-    gulp.watch('src/*.html',gulp.parallel('html'))
+    gulp.watch('*.html',gulp.parallel('html'))
     gulp.watch('src/js/*.js',gulp.parallel('script'))
 });
 
