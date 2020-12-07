@@ -1,8 +1,8 @@
 {
-  "name": "hnz-gulp",
+  "name": "gulp-file",
   "version": "1.0.0",
-  "description": "Сборка gulp",
-  "main": "index.html",
+  "description": "Server-gulp",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Wrincied/Arsen__F202x.git"
   },
-  "author": "hnz",
+  "author": "hnz (Hainz)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Wrincied/Arsen__F202x/issues"
@@ -19,9 +19,14 @@
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0",
-    "gulp-file-include": "^2.2.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "normalize.css": "^8.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "magnific-popup": "^1.1.0",
+    "slick-carousel": "^1.8.1"
+  }
 }

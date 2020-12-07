@@ -1,1 +1,1 @@
-@@include('alert.js')
+// Somethink
